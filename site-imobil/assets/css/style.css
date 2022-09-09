@@ -47,3 +47,38 @@ header ul li {
     font-weight: 300;
     line-height: 30px;
 }
+header li a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 16px;
+}
+header li a:hover,
+header li a.active {
+    color: #01528a;
+}
+header li a.active{
+    font-weight: 400;
+    border-bottom: #01528a;
+}
+header li button{
+    background-color: #0889d4;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin-left: 16px;
+    line-height: 20px;
+}
+
+main{
+    margin: 32px 0;
+}
+
+main h2{
+    margin: 32px 0;
+    font-weight: 300;
+    font-size: 36px;
+}
