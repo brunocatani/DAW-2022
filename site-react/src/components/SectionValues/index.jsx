@@ -1,9 +1,10 @@
-import './style.css';
+import './style.css'
 
-import imgLogo from '../../assets/img/place-company.png'
+import imgLogo from '../../assets/img/place-company.png';
 
 export function SectionValues() {
     return (
+
         <section id="values">
             <h2>Que é a Imobiliária Unimater?</h2>
 
@@ -29,5 +30,7 @@ export function SectionValues() {
                 </div>
             </div>
         </section>
+
+
     )
 }

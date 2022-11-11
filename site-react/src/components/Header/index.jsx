@@ -1,5 +1,6 @@
-import imgLogo from '../../assets/img/logo_imobiliaria.svg';
 import './style.css';
+
+import imgLogo from '../../assets/img/logo_imobiliaria.svg';
 
 export function Header() {
     return (
@@ -7,7 +8,7 @@ export function Header() {
             <div className="container">
                 <div className="brand">
                     <img src={imgLogo} alt="Logomarca da imobiliária" />
-                    <h6>Imobiliária Unimater</h6>
+                        <h6>Imobiliária Unimater</h6>
                 </div>
 
                 <nav>

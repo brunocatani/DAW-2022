@@ -1,27 +1,26 @@
-import { Banner } from '../../components/Banner';
-import { Cards } from '../../components/Cards';
-import { Reasons } from '../../components/Reasons';
+import { SectionBanner } from '../../components/SectionBanner';
+import { SectionReasons } from '../../components/SectionReasons';
+import { SectionSpecialists } from '../../components/SectionSpecialists';
 import { SectionValues } from '../../components/SectionValues';
-import { Specialists } from '../../components/Specialists';
+import { SectionCards } from '../../components/SectionCards';
+import { ImovelContextProvider } from '../../context/ImovelContext';
 
 export function HomePage() {
     return (
         <div id="home-page">
             <div className="container">
 
-                <Banner />
+                <ImovelContextProvider>
+                    <SectionBanner />
+                    <SectionCards />
+                </ImovelContextProvider>
 
-                <Cards />
+                <SectionReasons />
 
-                <Reasons />
-
-                <Specialists />
+                <SectionSpecialists />
 
                 <SectionValues />
-                     
             </div>
-
         </div>
-
     )
 }
