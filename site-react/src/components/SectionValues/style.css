@@ -1,15 +1,8 @@
-#values .values-container img{
-    width: 535px;
-    height: 301px;
-}
-
 #values .values-container {
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
-
-
 #values .values-content {
     display: flex;
     flex-direction: column;
@@ -17,8 +10,8 @@
     padding: 24px;
 }
 #values .values-content p {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     text-align: justify;    
 }
 #values .value-detail {

@@ -1,29 +1,26 @@
 import { IntlProvider, FormattedNumber } from 'react-intl';
-import { useProduct } from '../../hook/useProduct';
+import { useImovel } from '../../hook/useImovel';
 
 import './style.css';
 
 
 export function SectionCards() {
 
-    const { products } = useProduct();
+    const { imoveis } = useImovel();
 
     return (
         <section id="cards">
-            <h2>Produtos Disponíveis</h2>
+            <h2>Imóveis disponíveis</h2>
 
-            {products.length > 0 ? (
+            {imoveis.length > 0 ? (
                 <div className="cards-content">
 
-                    {products.map((item, index) => (
+                    {imoveis.map((item, index) => (
                         <div key={index} className="card">
-                            <img src={item.foto} alt="Produto" />
+                            <img src={item.foto} alt="Casa 1" />
                             <div className="card-content">
                                 <h4>{item.titulo}</h4>
-                                <p>{item.descricao1}</p>
-                                <p>{item.descricao2}</p>
-                                <p>{item.descricao3}</p>
-                                <p>{item.descricao4}</p>
+                                <p>{item.descricao}</p>
 
                                 <div className="card-price">
                                     <p>
@@ -40,7 +37,7 @@ export function SectionCards() {
 
                 </div>
             ) : (
-                <h3 className="not-found">Nenhum produto foi encontrado!</h3>
+                <h3 className="not-found">Nenhum imóvel foi encontrado!</h3>
             ) }
 
 

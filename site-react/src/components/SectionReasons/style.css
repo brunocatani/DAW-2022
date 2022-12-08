@@ -10,7 +10,7 @@
 }
 #reasons .reasons-content .reason {
     width: 100%;
-    border-left: 2px solid #cb0303;
+    border-left: 2px solid #0889d4;
 }
 #reasons .reason:first-of-type {
     border-left: none;
@@ -25,5 +25,5 @@
 #reasons .reason .reason-label {
     font-size: 24px;
     font-weight: 300;    
-    color: #212529;
+    color: #8f90a6;
 }

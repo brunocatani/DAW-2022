@@ -12,28 +12,24 @@
     gap: 16px;
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
     border-radius: 10px;
-    background-color: #dcdceb;
     padding: 20px;
     margin-bottom: 48px;
     position: relative;
 }
 #cards .card img {
-    width: 180px;
+    width: 160px;
     height: 180px;
-    border-radius: 10px;
 }
 #cards .card h4 {
-    font-weight: 800;
+    font-weight: 400;
     margin-bottom: 12px;
     text-align: justify;
-    color: #cb0303;
-    text-transform: uppercase;
 }
 #cards .card p {
     font-weight: 300;
     margin-bottom: 12px;
     text-align: justify;
-    color: #000;
+    color: #8f90a6;
     max-height: 72px;
     overflow: hidden;
 }
@@ -46,7 +42,7 @@
 
 }
 #cards .card-price p {
-    background-color: #31d408;
+    background-color: #0889d4;
     color: #fff;
     font-size: 14px;
     border-radius: 4px;

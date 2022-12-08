@@ -3,17 +3,17 @@ import { SectionReasons } from '../../components/SectionReasons';
 import { SectionSpecialists } from '../../components/SectionSpecialists';
 import { SectionValues } from '../../components/SectionValues';
 import { SectionCards } from '../../components/SectionCards';
-import { ProductContextProvider } from '../../context/ProductContext';
+import { ImovelContextProvider } from '../../context/ImovelContext';
 
 export function HomePage() {
     return (
         <div id="home-page">
             <div className="container">
 
-                <ProductContextProvider>
+                <ImovelContextProvider>
                     <SectionBanner />
                     <SectionCards />
-                </ProductContextProvider>
+                </ImovelContextProvider>
 
                 <SectionReasons />
 

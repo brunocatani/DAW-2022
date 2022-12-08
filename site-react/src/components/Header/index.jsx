@@ -1,28 +1,32 @@
 import './style.css';
 
-import imgLogo from '../../assets/img/OCTTA.svg';
+import imgLogo from '../../assets/img/logo_imobiliaria.svg';
 
 export function Header() {
     return (
         <header>
-            <div class="container">
-                <div class="brand">
-                    <img src={imgLogo} alt="OCTTA"/>
+            <div className="container">
+                <div className="brand">
+                    <img src={imgLogo} alt="Logomarca da imobiliária" />
+                        <h6>Imobiliária Unimater</h6>
                 </div>
 
                 <nav>
                     <ul>
                         <li>
-                            <a href="#" class="active">Home</a>
+                            <a href="#" className="active">Home</a>
                         </li>
                         <li>
-                            <a href="#">Produtos</a>
+                            <a href="#">Venda</a>
+                        </li>
+                        <li>
+                            <a href="#">Locação</a>
                         </li>
                         <li>
                             <a href="#">A Empresa</a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/bruno.catani/">Contato</a>
+                            <a href="contato.html">Fale Conosco</a>
                         </li>
                         <li>
                             <button>Login</button>

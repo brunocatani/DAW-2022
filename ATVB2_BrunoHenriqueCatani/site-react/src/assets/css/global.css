@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-image: url(../img/back.png);
+    background-position: 100%;
+    
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+main {
+    margin: 32px 0;
+}
+main h2 {
+    margin: 32px 0;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    color: #cb0303;
+}
+section {
+    margin-top: 64px
+}
