@@ -1,5 +1,7 @@
 footer {
-    background-color: #0889d4;
+    background-image: url(../../assets/img/PROJ.png);
+    background-position:left;
+    background-size:cover;
     color: #fff;
     margin-top: 48px;
     padding: 48px 0;
@@ -19,17 +21,7 @@ footer .footer-content {
 footer .footer-company {
     width: 450px;
 }
-footer .footer-company .footer-logo {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 32px;
-    padding-left: 40px;
-    background-image: url('../../assets/img/logo_imobiliaria_branca.svg');
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-size: 32px;
-    margin-bottom: 16px;
-}
+
 footer .footer-company p {
     font-weight: 300;
     font-size: 12px;

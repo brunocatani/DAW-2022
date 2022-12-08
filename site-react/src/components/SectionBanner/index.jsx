@@ -1,85 +1,83 @@
 import { useState } from 'react';
-import { useImovel } from '../../hook/useImovel';
+import { useProduct } from '../../hook/useProduct';
 import './style.css';
 
-const operacoes = [
-    { valor: '', rotulo: 'Operação' },
-    { valor: 'venda', rotulo: 'Venda' },
-    { valor: 'locacao', rotulo: 'Locação' }
+const nacionalidades = [
+    { valor: '', rotulo: 'Nacionalidades' },
+    { valor: 'nacional', rotulo: 'Nacional' },
+    { valor: 'internacional', rotulo: 'Internacional' }
 ];
 
 const tipos = [
-    { valor: '', rotulo: 'Tipo Imóvel' },
-    { valor: 'apto', rotulo: 'Apartamento' },
-    { valor: 'casa', rotulo: 'Casa' },
-    { valor: 'sobrado', rotulo: 'Sobrado' },
-    { valor: 'terreno', rotulo: 'Terreno' }
+    { valor: '', rotulo: 'Produtos' },
+    { valor: 'artificial', rotulo: 'Intelgência Artificial' },
+    { valor: 'uav', rotulo: 'Drones' },
+    { valor: 'bot', rotulo: 'Robótica' },
+    { valor: 'auto', rotulo: 'Automação' },
+    { valor: 'sec', rotulo: 'Segurança' }
 ];
 
-const cidades = [
-    { valor: '', rotulo: 'Cidade' },
-    { valor: 'coronel', rotulo: 'Coronel Vivida' },
-    { valor: 'beltrao', rotulo: 'Francisco Beltrão' },
-    { valor: 'pato', rotulo: 'Pato Branco' },
-    { valor: 'saudade', rotulo: 'Saudade do Iguaçu' }
-]
-
-const bairros = [
-    { valor: '', rotulo: 'Bairro' },
-    { valor: 'brasilia', rotulo: 'Brasilia' },
-    { valor: 'centro', rotulo: 'Centro' },
-    { valor: 'lasalle', rotulo: 'La Salle' },
-    { valor: 'pinheiro', rotulo: 'Pinheiros' }
+const marcas = [
+    { valor: '', rotulo: 'Marcas' },
+    { valor: 'octta', rotulo: 'OCTTA Systems' },
+    { valor: 'skydio', rotulo: 'Skydio' },
+    { valor: 'dji', rotulo: 'DJI' },
+    { valor: 'nvidia', rotulo: 'Nvidia Corporation' },
+    { valor: 'pi', rotulo: 'Raspberry PI' },
+    { valor: 'ardu', rotulo: 'Arduino' },
+    { valor: 'stm', rotulo: 'STMicroelectronics' }
 ];
+
 
 export function SectionBanner() {
 
-    const { imoveis } = useImovel();
+    const { products, setParamFilter } = useProduct();
+
+    const [filter, setFilter] = useState({});
 
     function handleFilter() {
-        
+        setParamFilter(filter)
     }
 
     return (
         <section id="banner">
-            <div className="banner-content">
-                <h1>Lugar exato para você realizar os seus sonhos</h1>
-                <h3>Nós oferecemos um serviço completo de venda, locação e compra</h3>
-            </div>
-            <div className="banner-filter">
-                <div className="filter-fields">
-
+            <div class="banner-content">
+                    <h1>Sistemas inteligentes para sua missão</h1>
+                </div>
+                <div class="banner-filter">
+                    <div class="filter-fields">
+                    
                     <form>
-                        <select>
-                            {operacoes.map((item,index) => (
+                        <select
+                            onChange={event => setFilter({...filter, nacionalidade: event.target.value})}>
+                            {nacionalidades.map((item,index) => (
                                 <option key={ index } value={ item.valor }>{ item.rotulo }</option>
                             ))}
                         </select>
 
-                        <select>
+                        <select
+                            onChange={event => setFilter({...filter, tipo: event.target.value})}>
                             {tipos.map((item,index) => (
                                 <option key={ index } value={ item.valor }>{ item.rotulo }</option>
                             ))}
                         </select>
 
-                        <select>
-                            {cidades.map((item,index) => (
+                        <select
+                            onChange={event => setFilter({...filter, marca: event.target.value})}>
+                            {marcas.map((item,index) => (
                                 <option key={ index } value={ item.valor }>{ item.rotulo }</option>
                             ))}                            
                         </select>
 
-                        <select>
-                            {bairros.map((item,index) => (
-                                <option key={ index } value={ item.valor }>{ item.rotulo }</option>
-                            ))}                           
-                        </select>
+                    
                     </form>
 
                 </div>
 
                 <div className="filter-result">
-                    <p className="result-value">{ imoveis.length }</p>
-                    <p className="result-label">Imóveis</p>
+                    <p className="result-value">{ products.length }</p>
+                    
+                    <p className="result-label">{ products.length != 1 ? 'produtos' : 'produto' }</p>
                     <button onClick={ handleFilter }>Filtrar</button>
                 </div>
             </div>

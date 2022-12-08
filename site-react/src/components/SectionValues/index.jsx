@@ -1,25 +1,25 @@
 import './style.css'
 
-import imgLogo from '../../assets/img/place-company.png';
+import imgLogo from '../../assets/img/t2.png';
 
 export function SectionValues() {
     return (
 
         <section id="values">
-            <h2>Que é a Imobiliária Unimater?</h2>
+            <h2>A NOSSA MISSÃO É</h2>
 
             <div className="values-container">
-                <img src={imgLogo} alt="Foto da firma" />
+                <img src={imgLogo} alt="Equipe" />
 
                 <div className="values-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos dolores necessitatibus, blanditiis corporis veritatis impedit velit temporibus mollitia hic sed fugit at vitae non exercitationem rem corrupti nostrum officia.</p>
+                    <p>Fornecer sistemas de hardware e software inteligêntes, confiáveis e eficiêntes.</p>
 
-                    <p>Neque eveniet fugiat at deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse doloremque perferendis! Culpa earum reiciendis repudiandae, officiis magnam voluptate ex quas deleniti, enim ad excepturi.</p>
+                    <p>Trazendo mais informação, tecnologia e segurança para sua empresa</p>
 
                     <div className="value-detail">
                         <div className="value">
-                            <span>Alto Padrão</span>
-                            <span>Agilidade</span>
+                            <span>Tecnologia de ponta</span>
+                            <span>Intelgência Artificial</span>
                         </div>
 
                         <div className="value">
@@ -30,7 +30,5 @@ export function SectionValues() {
                 </div>
             </div>
         </section>
-
-
     )
 }

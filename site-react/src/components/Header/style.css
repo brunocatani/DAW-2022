@@ -1,5 +1,7 @@
 header { /* T R B L */ 
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 20px 20px;
+    
+
 }
 header .container {
     display: flex;
@@ -14,14 +16,9 @@ header .brand {
     gap: 16px;
 }
 header .brand img {
-    width: 40px;
+    width: 160px;
 }
-header .brand h6 {
-    font-size: 24px;
-    color: #01528A;
-    font-weight: 400;
-    line-height: 30px;
-}
+
 header ul {
     display: flex;
     flex-direction: row;
@@ -34,21 +31,23 @@ header ul li {
 }
 header li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     padding-bottom: 16px;
 }
+
 header li a:hover,
 header li a.active {
-    color: #0889d4;
+    color: #cb0303;
 }
 header li a.active {    
     font-weight: 400;
-    border-bottom: 2px solid #0889d4;
+    border-bottom: 2px solid #cb0303;
 }
 header li button {
-    background-color: #0889d4;
+    background-color: #cb0303;
     color: #fff;
     border: none;
+    border-color: #000;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
